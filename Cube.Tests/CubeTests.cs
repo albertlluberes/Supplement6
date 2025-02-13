@@ -17,7 +17,7 @@ namespace Supplement5.Tests
         }
 
         [Fact]
-        public void TestCubeValidation()
+        public void TestCubeValidate()
         {
             Assert.Throws<ArgumentException>(() => new Cube(0));
         }
