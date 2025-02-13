@@ -1,5 +1,6 @@
 using System;
 using Sup5;
+namespace Supplement5;
 
 public class Cube : Shape3D
 {
