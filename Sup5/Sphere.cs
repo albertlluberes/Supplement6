@@ -24,7 +24,7 @@ public class Sphere : Shape3D
    
     public override double GetVolume()
     {
-        return (4 / 3.0) * Math.PI * Math.Pow(radius, 3);
+        return (4.0 / 3.0) * Math.PI * Math.Pow(radius, 3);
     }
 
     
@@ -34,7 +34,7 @@ public class Sphere : Shape3D
     }
 
     public override string Dump()
-    {
-        return $"Shape: Sphere, Surface Area: {GetSurfaceArea()}, Volume: {GetVolume()}";
-    }
+{
+    return $"Shape: Sphere, Surface Area: {GetSurfaceArea():F5}, Volume: {GetVolume():F5}";
+}
 }
