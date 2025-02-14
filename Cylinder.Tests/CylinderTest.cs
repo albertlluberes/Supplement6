@@ -32,14 +32,28 @@ namespace Supplement5.Tests
          [Fact]
         public void Cylinder_SurfaceAreaTest()
         {
-            // Arrange
+            
             Cylinder cylinder = new Cylinder(3, 5);
 
-            // Act
+            
             double surfaceArea = cylinder.GetSurfaceArea();
 
-            // Assert
+            
             Assert.Equal(150.79645, surfaceArea, 5); // Surface Area = 2πrh + 2πr²
+        }
+
+        [Fact]
+        public void Cylinder_DumpTest()
+        {
+            
+            Cylinder cylinder = new Cylinder(3, 5);
+            string expected = "Shape: Cylinder, Surface Area: 150.79645, Volume: 141.37167";
+
+            
+            string dump = cylinder.Dump();
+
+            
+            Assert.Equal(expected, dump);
         }
 
     }
