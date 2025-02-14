@@ -46,7 +46,10 @@ namespace Supplement5
         {
             return 2 * Math.PI * radius * height + 2 * Math.PI * Math.Pow(radius, 2);
         }
-
+/// <summary>
+/// Returns a formatted string containing the shape type, surface area, and volume
+/// </summary>
+/// <returns></returns>
         public override string Dump()
         {
             return $"Shape: Cylinder, Surface Area: {GetSurfaceArea():F5}, Volume: {GetVolume():F5}";
