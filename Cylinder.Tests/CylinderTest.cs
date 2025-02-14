@@ -1,5 +1,6 @@
 using System;
 using Xunit;
+using Sup5;
 
 namespace Supplement5.Tests
 {
