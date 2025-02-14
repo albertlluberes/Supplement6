@@ -49,7 +49,7 @@ namespace Supplement5
 
         public override string Dump()
         {
-            throw new NotImplementedException();
+            return $"Shape: Cylinder, Surface Area: {GetSurfaceArea():F5}, Volume: {GetVolume():F5}";
         }
     }
 }
