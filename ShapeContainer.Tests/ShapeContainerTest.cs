@@ -1,3 +1,4 @@
+using Sup5;
 namespace Supplement5.Tests{
     public class ShapeContainerTests
 {
