@@ -14,6 +14,16 @@ namespace Sup5
         }
         shapes.Add(shape);  // Add the shape to the list
     }
+
+    // Method to get the shape at a specific index
+    public Shape3D Get(int index)
+    {
+        if (index < 0 || index >= shapes.Count)
+        {
+            throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
+        }
+        return shapes[index];  // Return the shape at the specified index
+    }
     
     
     }
