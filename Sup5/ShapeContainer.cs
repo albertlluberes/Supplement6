@@ -24,6 +24,15 @@ namespace Sup5
         }
         return shapes[index];  // Return the shape at the specified index
     }
+    // Method to delete the shape at a specific index
+    public void Delete(int index)
+    {
+        if (index < 0 || index >= shapes.Count)
+        {
+            throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
+        }
+        shapes.RemoveAt(index);  // Remove the shape at the specified index
+    }
     
     
     }

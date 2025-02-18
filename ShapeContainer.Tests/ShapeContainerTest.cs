@@ -44,7 +44,7 @@ namespace Supplement5.Tests{
     {
         // Arrange: Set up a container and add a shape
         var container = new ShapeContainer();
-        var shape = new Cylinder(3, 7);
+        var shape = new Cylinder(3, 5);
         container.Create(shape);
 
         // Act: Delete the shape at index 0
